@@ -65,13 +65,21 @@ class FoodContainer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                child: Text(
-                  price,
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 25,
+                    ),
+                    Text(
+                      price,
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    ),
+                  ],
                 ),
               ),
               Container(
-                height: 39,
+                height: 40,
                 width: 40,
                 decoration: BoxDecoration(
                     border: Border.symmetric(),
